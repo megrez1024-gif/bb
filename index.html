@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f1e8">
+  <meta name="theme-color" content="#fafafc">
   <meta name="description" content="이뻐졋다 헤어케어 — 나에게 맞는 리듬을 찾는 헤어케어 스튜디오 디자인 시안">
   <title>이뻐졋다 — 헤어케어 스튜디오</title>
   <style>
     :root {
       color-scheme: light;
-      --paper: #f4f1e8;
-      --ink: #1e302b;
-      --muted: #68746a;
-      --line: rgba(30, 48, 43, .16);
-      --lime: #d9f16e;
-      --lilac: #c6b7eb;
-      --orange: #f17f5d;
+      --paper: #fafafc;
+      --ink: #242633;
+      --muted: #707483;
+      --line: rgba(36, 38, 51, .12);
+      --lime: #c8ed79;
+      --lilac: #dce2ff;
+      --orange: #ff8268;
       --serif: "Iowan Old Style", "Batang", "Noto Serif KR", serif;
       --sans: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
       font-family: var(--sans);
@@ -33,12 +33,12 @@
     .topline { border-bottom: 1px solid var(--line); }
     .topline-inner { min-height: 36px; display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 10px; letter-spacing: .04em; }
     .topline-inner span:last-child { color: var(--muted); }
-    header { position: sticky; z-index: 10; top: 0; background: rgba(244, 241, 232, .93); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+    header { position: sticky; z-index: 10; top: 0; background: rgba(250, 250, 252, .93); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
     .nav { min-height: 68px; display: flex; align-items: center; justify-content: space-between; }
     .brand { font-family: var(--serif); font-size: 23px; font-weight: 700; letter-spacing: -.08em; }
     .brand small { display: block; margin-top: 1px; font-family: var(--sans); font-size: 8px; font-weight: 600; letter-spacing: .18em; }
     .nav-links { display: flex; align-items: center; gap: 27px; font-size: 11px; }
-    .nav-links a:not(.nav-cta) { color: #59675f; }
+    .nav-links a:not(.nav-cta) { color: #636777; }
     .nav-cta, .pill-link { display: inline-flex; justify-content: center; align-items: center; gap: 16px; padding: 12px 16px; border: 1px solid var(--ink); border-radius: 99px; font-size: 10px; font-weight: 700; }
     .nav-cta { background: var(--ink); color: var(--paper); }
     .hero { position: relative; overflow: hidden; min-height: 690px; padding: 64px 0 80px; }
@@ -46,27 +46,29 @@
     .hero::after { position: absolute; content: ""; width: 140px; height: 140px; right: 7%; top: 60px; background: var(--lime); border-radius: 50%; }
     .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr .92fr; align-items: center; gap: 5%; }
     .hero-copy { padding: 22px 0 35px; }
-    .hero-copy .eyebrow { color: #69766c; }
+    .hero-copy .eyebrow { color: #7773df; }
     h1 { max-width: 620px; margin: 27px 0 21px; font-family: var(--serif); font-size: clamp(54px, 7.2vw, 98px); font-weight: 500; line-height: 1.02; letter-spacing: -.09em; }
-    h1 em { color: #829566; font-weight: 400; }
-    .hero-copy > p:not(.eyebrow) { max-width: 370px; color: #59675f; font-size: 14px; line-height: 1.9; word-break: keep-all; }
+    h1 em { color: #7773df; font-weight: 400; }
+    .hero-copy > p:not(.eyebrow) { max-width: 370px; color: #636777; font-size: 14px; line-height: 1.9; word-break: keep-all; }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 29px; }
     .pill-link.primary { border-color: var(--ink); background: var(--ink); color: var(--paper); }
     .hero-note { margin-top: 29px; color: var(--muted); font-size: 10px; }
     .hero-art { position: relative; display: grid; place-items: center; min-height: 500px; }
-    .orbit { position: absolute; width: min(100%, 470px); aspect-ratio: 1; border: 1px solid rgba(30,48,43,.17); border-radius: 50%; animation: orbit 28s linear infinite; }
+    .orbit { position: absolute; width: min(100%, 470px); aspect-ratio: 1; border: 1px solid rgba(36,38,51,.14); border-radius: 50%; animation: orbit 28s linear infinite; }
     .orbit::before, .orbit::after { position: absolute; content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--orange); }
     .orbit::before { top: 15%; left: 20%; }
     .orbit::after { right: 8%; bottom: 27%; width: 6px; height: 6px; background: var(--ink); }
-    .phone { position: relative; width: min(67%, 286px); padding: 9px; border: 1px solid rgba(30,48,43,.42); border-radius: 35px; background: #26342f; box-shadow: 0 30px 65px rgba(30,48,43,.22); transform: rotate(5deg); animation: phone-float 5s ease-in-out infinite; }
-    .phone-screen { position: relative; overflow: hidden; min-height: 466px; border-radius: 27px; background: #e6e0d5; }
-    .phone-top { display: flex; justify-content: space-between; padding: 18px 17px 0; font-size: 8px; font-weight: 700; }
+    .phone { position: relative; width: min(67%, 286px); padding: 9px; border: 1px solid rgba(36,38,51,.25); border-radius: 35px; background: #292b37; box-shadow: 0 30px 65px rgba(42,45,70,.17); transform: rotate(5deg); animation: phone-float 5s ease-in-out infinite; }
+    .phone-screen { position: relative; overflow: hidden; min-height: 466px; border-radius: 27px; background: #f0eff5; }
+    .phone-screen::after { position: absolute; z-index: 1; inset: 0; background: linear-gradient(180deg, #f0eff5 0%, rgba(240,239,245,.97) 31%, rgba(240,239,245,.48) 49%, transparent 64%); content: ""; pointer-events: none; }
+    .phone-photo { position: absolute; right: 0; bottom: 0; left: 0; width: 100%; height: 68%; object-fit: cover; object-position: center 25%; }
+    .phone-top { position: relative; z-index: 2; display: flex; justify-content: space-between; padding: 18px 17px 0; font-size: 8px; font-weight: 700; }
     .phone-title { position: relative; z-index: 2; padding: 42px 18px 0; font-family: var(--serif); font-size: 33px; line-height: 1.13; letter-spacing: -.08em; }
-    .phone-title span { color: #7b8a66; font-style: italic; }
-    .phone-caption { position: relative; z-index: 2; padding: 11px 18px 0; color: #69746a; font-size: 8px; line-height: 1.7; }
+    .phone-title span { color: #7773df; font-style: italic; }
+    .phone-caption { position: relative; z-index: 2; padding: 11px 18px 0; color: #707483; font-size: 8px; line-height: 1.7; }
     .phone-illustration { position: absolute; right: 0; bottom: 0; left: 0; height: 232px; }
     .phone-button { position: absolute; z-index: 2; bottom: 16px; left: 16px; display: flex; width: calc(100% - 32px); justify-content: space-between; padding: 12px 13px; border-radius: 24px; background: var(--lime); font-size: 9px; font-weight: 700; }
-    .floating-label { position: absolute; z-index: 2; display: flex; align-items: center; gap: 9px; padding: 11px 13px; border: 1px solid rgba(30,48,43,.12); border-radius: 4px; background: #faf8f0; box-shadow: 0 12px 25px rgba(30,48,43,.09); font-size: 9px; }
+    .floating-label { position: absolute; z-index: 2; display: flex; align-items: center; gap: 9px; padding: 11px 13px; border: 1px solid rgba(36,38,51,.1); border-radius: 8px; background: #fff; box-shadow: 0 12px 25px rgba(42,45,70,.08); font-size: 9px; }
     .floating-label b { display: grid; width: 24px; height: 24px; place-items: center; border-radius: 50%; background: var(--lime); font-size: 12px; }
     .label-one { top: 18%; right: -3%; animation: label-float 4s ease-in-out infinite; }
     .label-two { bottom: 15%; left: 0; animation: label-float 4.8s ease-in-out infinite reverse; }
@@ -88,43 +90,43 @@
     .principle { min-height: 170px; padding: 22px 18px 20px 0; border-right: 1px solid var(--line); }
     .principle + .principle { padding-left: 20px; }
     .principle:last-child { border: 0; }
-    .principle .number { color: #85936c; font-family: var(--serif); font-size: 20px; }
+    .principle .number { color: #7773df; font-family: var(--serif); font-size: 20px; }
     .principle h4 { margin: 24px 0 7px; font-family: var(--serif); font-size: 18px; font-weight: 600; letter-spacing: -.05em; }
     .principle p { margin: 0; color: var(--muted); font-size: 10px; line-height: 1.8; word-break: keep-all; }
-    .studio { padding: 100px 0; background: #26342f; color: var(--paper); }
-    .studio .section-heading > p { color: #c2c9bd; }
-    .studio-art { position: relative; overflow: hidden; min-height: 460px; background: #b8c5ae; }
+    .studio { padding: 100px 0; background: #f1f3f9; color: var(--ink); }
+    .studio .section-heading > p { color: var(--muted); }
+    .studio-art { position: relative; overflow: hidden; min-height: 460px; background: #dfe6f4; border-radius: 12px; }
     .studio-art svg { position: absolute; width: 100%; height: 100%; inset: 0; }
-    .image-caption { display: flex; justify-content: space-between; gap: 18px; margin-top: 15px; color: #c2c9bd; font-size: 9px; }
+    .image-caption { display: flex; justify-content: space-between; gap: 18px; margin-top: 15px; color: var(--muted); font-size: 9px; }
     .programs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; }
-    .program-card { position: relative; min-height: 295px; padding: 23px; border: 1px solid var(--line); background: rgba(255,255,255,.16); }
-    .program-card:nth-child(2) { background: #e8e1f0; }
-    .program-card:nth-child(3) { background: #e4e9d7; }
-    .program-card .index { color: #75816f; font-size: 9px; letter-spacing: .13em; }
+    .program-card { position: relative; min-height: 295px; padding: 23px; border: 1px solid var(--line); border-radius: 10px; background: #f4f5f9; }
+    .program-card:nth-child(2) { background: #eeedff; }
+    .program-card:nth-child(3) { background: #edf5df; }
+    .program-card .index { color: #7773df; font-size: 9px; letter-spacing: .13em; }
     .program-card h3 { margin: 60px 0 12px; font-family: var(--serif); font-size: 27px; font-weight: 500; letter-spacing: -.07em; }
-    .program-card p { max-width: 250px; margin: 0; color: #58665e; font-size: 11px; line-height: 1.8; word-break: keep-all; }
+    .program-card p { max-width: 250px; margin: 0; color: #636777; font-size: 11px; line-height: 1.8; word-break: keep-all; }
     .program-card .arrow { position: absolute; right: 21px; bottom: 20px; font-size: 19px; }
     .program-disclaimer { margin: 15px 0 0; color: var(--muted); font-size: 9px; line-height: 1.7; }
-    .device-section { overflow: hidden; background: #e9e6dc; }
+    .device-section { overflow: hidden; background: #f3f5fa; }
     .device-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; align-items: center; }
     .device-copy h2 { max-width: 470px; margin: 16px 0; font-family: var(--serif); font-size: clamp(39px, 5.5vw, 65px); font-weight: 500; line-height: 1.12; letter-spacing: -.08em; }
     .device-copy > p { max-width: 380px; color: var(--muted); font-size: 12px; line-height: 1.9; word-break: keep-all; }
     .device-points { margin-top: 29px; border-top: 1px solid var(--line); }
     .device-point { display: flex; justify-content: space-between; gap: 15px; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 11px; }
     .device-point span:last-child { color: var(--muted); }
-    .device-art { display: grid; min-height: 400px; place-items: center; border-radius: 50%; background: #d7e0ca; }
+    .device-art { display: grid; min-height: 400px; place-items: center; border-radius: 50%; background: #e2e7fb; }
     .device-art svg { width: 86%; max-width: 430px; }
     .steps { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); }
     .step { padding: 20px 18px 0 0; }
     .step + .step { padding-left: 18px; border-left: 1px solid var(--line); }
-    .step-num { color: #86966b; font-family: var(--serif); font-size: 19px; }
+    .step-num { color: #7773df; font-family: var(--serif); font-size: 19px; }
     .step h3 { margin: 28px 0 9px; font-family: var(--serif); font-size: 18px; font-weight: 600; letter-spacing: -.05em; }
     .step p { margin: 0; color: var(--muted); font-size: 10px; line-height: 1.8; word-break: keep-all; }
     .quote { position: relative; overflow: hidden; padding: 87px 0; background: var(--lilac); }
-    .quote::after { position: absolute; right: 10%; bottom: -130px; width: 350px; height: 350px; border: 1px solid rgba(30,48,43,.2); border-radius: 50%; content: ""; }
+    .quote::after { position: absolute; right: 10%; bottom: -130px; width: 350px; height: 350px; border: 1px solid rgba(36,38,51,.16); border-radius: 50%; content: ""; }
     .quote-inner { position: relative; z-index: 1; max-width: 780px; }
     .quote h2 { margin: 18px 0; font-family: var(--serif); font-size: clamp(36px, 5.5vw, 65px); font-weight: 500; line-height: 1.2; letter-spacing: -.08em; }
-    .quote p:last-child { color: #59675f; font-size: 11px; }
+    .quote p:last-child { color: #636777; font-size: 11px; }
     .faq-list { border-top: 1px solid var(--line); }
     details { border-bottom: 1px solid var(--line); }
     summary { display: flex; justify-content: space-between; gap: 20px; padding: 21px 0; cursor: pointer; list-style: none; font-family: var(--serif); font-size: 17px; letter-spacing: -.04em; }
@@ -132,12 +134,12 @@
     summary::after { content: "+"; font-family: var(--sans); font-size: 18px; }
     details[open] summary::after { content: "−"; }
     details p { max-width: 710px; margin: -3px 0 20px; color: var(--muted); font-size: 11px; line-height: 1.9; word-break: keep-all; }
-    .contact { padding: 80px 0; background: var(--lime); }
+    .contact { padding: 80px 0; background: #e8eaff; }
     .contact-inner { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
     .contact h2 { margin: 12px 0 10px; font-family: var(--serif); font-size: clamp(35px, 5vw, 60px); font-weight: 500; letter-spacing: -.08em; }
-    .contact p { margin: 0; color: #56634f; font-size: 11px; line-height: 1.8; }
+    .contact p { margin: 0; color: #636777; font-size: 11px; line-height: 1.8; }
     .contact .pill-link { flex-shrink: 0; background: var(--ink); color: var(--paper); }
-    footer { padding: 26px 0 33px; background: var(--ink); color: var(--paper); }
+    footer { padding: 26px 0 33px; background: #242633; color: #fafafc; }
     .footer-top { display: flex; align-items: start; justify-content: space-between; gap: 24px; }
     .footer-brand { font-family: var(--serif); font-size: 25px; letter-spacing: -.08em; }
     .footer-meta { color: #bdc5b9; font-size: 9px; line-height: 1.9; text-align: right; }
@@ -253,16 +255,7 @@
               <div class="phone-top"><span>이뻐졋다</span><span>STUDIO — 01</span></div>
               <div class="phone-title">오늘은<br><span>나를 위한</span><br>헤어케어</div>
               <div class="phone-caption">천천히 살피고, 편안하게 돌보는<br>나만의 시간을 시작해요.</div>
-              <svg class="phone-illustration" viewBox="0 0 260 230" role="img" aria-label="꽃과 머리카락을 추상적으로 표현한 그림">
-                <rect width="260" height="230" fill="#b9c5a8"/>
-                <circle cx="204" cy="60" r="37" fill="#d9f16e"/>
-                <path d="M0 151 Q63 121 117 156 T260 145 V230 H0Z" fill="#87967b"/>
-                <path d="M35 230 Q39 158 94 126 Q131 105 163 132 Q193 158 192 230Z" fill="#273a32"/>
-                <path d="M72 167 Q79 136 112 127 Q142 119 160 145 Q145 142 130 153 Q109 169 105 197 Q95 179 72 167Z" fill="#d5b19a"/>
-                <path d="M108 150 Q133 128 157 144 Q175 157 177 189 Q155 174 142 183 Q126 192 119 216 Q109 180 87 176Z" fill="#443c37"/>
-                <path d="M210 165 Q204 133 225 112 M226 146 Q209 129 207 111 M224 133 Q245 120 248 100" fill="none" stroke="#f4f1e8" stroke-width="3" stroke-linecap="round"/>
-                <circle cx="225" cy="105" r="7" fill="#f17f5d"/><circle cx="206" cy="105" r="6" fill="#d9f16e"/><circle cx="249" cy="94" r="5" fill="#d9f16e"/>
-              </svg>
+              <img class="phone-photo" src="images/manager.png" alt="이뻐졋다 헤어케어 관리사">
               <div class="phone-button"><span>나를 위한 시간 알아보기</span><span>↗</span></div>
             </div>
           </div>
